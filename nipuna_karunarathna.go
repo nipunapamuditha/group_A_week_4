@@ -1,6 +1,21 @@
 package main
 
+import (
+	"fmt"
+	"net"
+	"time"
+)
 
-func concatStrings(str1, str2 string) string {
-	return str1 + str2
+func CheckHostAvailability(host string) string {
+	result := ""
+
+	conn, err := net.DialTimeout("tcp", host+":80", 2*time.Second)
+	if err != nil {
+		result += fmt.Sprintf("%s is not available\n", host)
+	} else {
+		result += fmt.Sprintf("%s is available\n", host)
+		conn.Close()
+	}
+
+	return result
 }
