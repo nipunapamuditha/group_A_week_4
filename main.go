@@ -8,4 +8,6 @@ func main() {
 	print(result + "\n")
 	print("Seruban Peter Shan \n")
 	SerubanPeterShan(8)
+	greetStudent("Sam", "40")
+
 }
