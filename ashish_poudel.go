@@ -1,23 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
-func agecount() {
+func addint() {
+	var num1, num2 int64
 
-	type Person struct {
-		name string
-		age  int
-	}
-	
-	person1 := Person{"SHAN", 25}
-	fmt.Println(person1)
+	fmt.Print("Enter first decimal number: ")
+	fmt.Scan(&num1)
+	fmt.Print("Enter second decimal number: ")
+	fmt.Scan(&num2)
 
-	var person2 Person
+	hex1 := strconv.FormatInt(num1, 16)
+	hex2 := strconv.FormatInt(num2, 16)
 
-	person2 = Person{
-		name: "NIPUNA",
-		age:  29,
-	}
+	sumDecimal := num1 + num2
+	sumHex := strconv.FormatInt(sumDecimal, 16)
 
-	fmt.Println(person2)
+	fmt.Printf("First number in hexadecimal: %s\n", hex1)
+	fmt.Printf("Second number in hexadecimal: %s\n", hex2)
+	fmt.Printf("Sum in decimal: %d\n", sumDecimal)
+	fmt.Printf("Sum in hexadecimal: %s\n", sumHex)
 }

@@ -16,7 +16,7 @@ func main() {
 
 	print("Ashish Poudel \n")
 
-	agecount()
+	addint()
 
 	// greetStudent("Sam", "40")
 
