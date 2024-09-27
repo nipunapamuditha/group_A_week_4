@@ -14,6 +14,9 @@ func main() {
 	print("Ashish Poudel \n")
 
 	agecount()
-	greetStudent("Sam", "40")
+
+	// greetStudent("Sam", "40")
+
+	WholeNumbers()
 
 }
