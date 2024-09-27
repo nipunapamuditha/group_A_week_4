@@ -6,7 +6,10 @@ import (
 )
 
 func SerubanPeterShan(i int) {
-	for j := 0; j < i; j++ {
-		fmt.Println(strings.Repeat("*", j))
+	for j := 1; j <= i; j++ {
+		fmt.Println(strings.Repeat(" ", i-j) + strings.Repeat("*", 2*j-1))
+	}
+	for j := i - 1; j > 0; j-- {
+		fmt.Println(strings.Repeat(" ", i-j) + strings.Repeat("*", 2*j-1))
 	}
 }
