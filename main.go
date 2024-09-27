@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("Welcome to Group A's Week 4 Project!")
-	print("Nipuna Karunarathna \n")
+	print("Nipuna Karunarathna \n input needed ")
 	var url string
 	fmt.Print("Enter URL: ")
 	fmt.Scanln(&url)
